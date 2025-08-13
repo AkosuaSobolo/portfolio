@@ -1,2 +1,2 @@
 # portfolio
-A website for me.
+A website for me. This website would be rad asf.
