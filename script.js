@@ -1,23 +1,36 @@
-function hamburger() {
-    const dropdownMenu = document.querySelector(".dropdown");
-    dropdownMenu.classList.add("active");
-}
+let textIndex = 0;
+let charIndex = 0;
+let typingSpeed = 100;
+let erasingSpeed = 50;
+let newTextDelay = 2000;
+let dropdownMenu = document.querySelector(".js-dropdown");
+let closeButton = document.querySelector(".cancel")
+let hamburger = document.querySelector(".hamburger")
 
-function cancel() {
-    const dropdownMenu = document.querySelector(".dropdown");
-    dropdownMenu.classList.remove("active");
-}
+let isClicked = false
+
+
+hamburger.addEventListener('click', () => {
+    if(!isClicked){
+        isClicked = true
+        dropdownMenu.classList.toggle("dropdownMenuList")
+        console.log("open")
+    }
+})
+
+closeButton.addEventListener('click', () => {
+    if(isClicked){
+        isClicked = false
+        dropdownMenu.classList.remove("dropdownMenuList")
+        console.log("close")
+    }
+})
 
 const texts = [ 
     "Frontend Developer"
 ]
 
 const textElement = document.querySelector(".typewriter-text");
-let textIndex = 0;
-let charIndex = 0;
-const typingSpeed = 100;
-const erasingSpeed = 50;
-const newTextDelay = 2000;
 
 function type() {
     if (charIndex < texts[textIndex].length) {
