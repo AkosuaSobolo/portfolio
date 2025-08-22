@@ -28,7 +28,7 @@ Here are some of the key skills and technologies I use to bring ideas to life.
 
 I'm always open to new opportunities and collaborations. Feel free to connect with me!
 
-* **Email:** akosuaworde11@gmail.com](mailto:akosuaworde11@gmail.com)
+* **Email:** [akosuaworde11@gmail.com](mailto:akosuaworde11@gmail.com)
 * **LinkedIn:** [linkedin.com/in/mary-worde](https://www.linkedin.com/in/mary-worde)
 * **GitHub:** [github.com/AkosuaSobolo](https://github.com/AkosuaSobolo)
 
