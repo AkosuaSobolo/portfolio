@@ -1,4 +1,4 @@
-#portfolio
+# portfolio
 # My Portfolio
 
 ---
@@ -52,3 +52,11 @@ I'm always open to new opportunities and collaborations. Feel free to connect wi
 * **Email:** [your.email@example.com](mailto:your.email@example.com)
 * **LinkedIn:** [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
 * **GitHub:** [github.com/yourusername](https://github.com/yourusername)
+
+### Portfolio link
+[portfolio website](https://akosuasobolo.netlify.app/)
+
+### Portfolio preview
+<img width="1320" height="625" alt="image" src="https://github.com/user-attachments/assets/dc8c3538-88c8-4d95-a39a-e26753ab82b8" />
+
+
