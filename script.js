@@ -27,7 +27,7 @@ closeButton.addEventListener('click', () => {
 })
 
 const texts = [ 
-    "Developer", "Frontend Developer"
+    " Developer","Backend Developer"
 ]
 
 const textElement = document.querySelector(".typewriter-text");
