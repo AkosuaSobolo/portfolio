@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../port/images"
+		},
+		{
+			"path": "../port/Resume"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "my_portfolio"
+	}
+}

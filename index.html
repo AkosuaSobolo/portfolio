@@ -1,195 +1,296 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-         <!-- =====BOX ICONS ====== -->
-        <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Worde Mary | Portfolio</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="https://akosuasobolo.github.io/portfolio/" target="_blank" class="link"
+          >🤗Akosua</a
+        >
+      </h3>
 
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-        <link rel="stylesheet" href="style.css">
-        <title>Worde Mary | Portfolio</title>
-    </head>
-    <body>
-        <nav>
-            <div class="nav-container">
-                <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
-                    Worde <span>Mary</span>
-                </div>
-                <i class="fa-solid fa-bars hamburger"></i>
-            </div>
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#about">About</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
 
-            <div class="links">
-                <ul>
-                    <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#home">Home</a></li>
-                    <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#about">About</a></li>
-                    <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#skills">Skills</a></li>
-                    <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#projects">Projects</a></li>
-                    <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            
-            <div class="dropdown js-dropdown">
-                <i class="fa-solid fa-xmark cancel"></i>
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-                
-            </div>
-        </nav>
-        <main>
-            <section id="home">
-                <div class="another-container">
-                    <div class="image">
-                        <img src="images/First.jpg" alt="A professional portrait">
-                    </div>
-                    <div class="content">
-                        <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hello, I'm <span>Akosua</span></h1>
-                        <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900"> A <span class="typewriter-text"> Web</span></div>
-                        <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">Welcome to my digital space, where creativity and code meet to showcase 
-                            projects, skills, and professional growth. Each page of this website is designed with a clean layout to make my work easy to explore. 
-                            This is more than just a website, it is a story told through design and innovation. One Project At A Time!</p>
-                        <div class="social-links">
-                        <a href="https://www.linkedin.com/in/mary-worde/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/AkosuaSobolo" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="mailto:akosuaworde11@gmail.com"><i class="fas fa-envelope"></i></a>
-                        </div>
-                        <div class="button">
-                            <button>Hire Me</button>
-                            <a href="CV/Worde's Resume.docx" target="_blank" class="cv-button"><button>DOWNLOAD CV</button></a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
 
-            <section id="about">
-                <h2 data-aos="fade-up">About Me</h2>
-                <div class="about-content">
-                    <div class="about-text" data-aos="fade-right">
-                        <h3>Oh, hello!</h3>
-                        <p>I am Akosua. A passionate web developer with a knack for creating beautiful, responsive, and user-friendly websites. 
-                            I specialize in backend development, using a combination of HTML, CSS, JavaScript, Python and Fastapi framework to build engaging digital experiences. 
-                            My goal is to create clean, efficient, and maintainable projects.</p>
-                        <p>When I'm not coding, you can find me exploring new technologies or working on personal projects to further hone my skills. 
-                            I'm always eager to learn and take on new challenges.</p>
-                    </div>
-                    <div class="about-image" data-aos="fade-left">
-                        <img src="images/Second.jpg" alt="A professional portrait.">
-                    </div>
-                </div>
-            </section>
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
 
-            <section id="skills">
-                <h2 data-aos="fade-up">My Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-card" data-aos="zoom-in" data-aos-duration="1000">
-                        <i class="fa-brands fa-python"></i>
-                        <h3>Python</h3>
-                        <p>Basic</p>
-                    </div>
-                    <div class="skill-card" data-aos="zoom-in" data-aos-duration="1000">
-                        <i class="fa-brands fa-html5"></i>
-                        <h3>HTML5</h3>
-                        <p>Basic</p>
-                    </div>
-                    <div class="skill-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <h3>CSS</h3>
-                        <p>Basic</p>
-                    </div>
-                    <div class="skill-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
-                        <i class="fa-brands fa-js"></i>
-                        <h3>JavaScript</h3>
-                        <p>Basic</p>
-                    </div>
-                    </div>
-                </div>
-            </section>
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <img src="images/Second.jpg" alt="Mary's profile photo" class="about__img"/>
+        <h1>Hello there, I am <span class="about__name">Mary.</span></h1>
+        <h2 class="about__role">A Back-end Developer.</h2>
+        <p class="about__desc">
+          A graduate of the University of Ghana with a degree in Information Studies and Russian Language. 
+          I specialize in backend development, using a combination of HTML, CSS, JavaScript, Python and Fastapi framework to build engaging digital 
+          experiences. My goal is to create clean, efficient, and maintainable projects.
+        </p>
 
-            <section id="projects">
-                <h2 data-aos="fade-up">My Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">
-                        <img src="images/Port.png" alt="Project 1 preview">
-                        <div class="project-info">
-                            <h3>Portfolio Website</h3>
-                            <p>An interactive digital portfolio website designed to present my projects, skills, and professional journey in a clear and engaging way. 
-                                The website reflects my creativity, communication style, and ability to translate ideas into impactful visual storytelling.
-                                This portfolio website was built solely with HTML, CSS and JavaScript.</p>
-                            <a href="https://akosuasobolo.github.io/portfolio/" target="_blank" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                        <div class="project-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">
-                        <img src="images/API.png" alt="Project 2 preview">
-                        <div class="project-info">
-                            <h3>Event Manager API</h3>
-                            <p>A RESTful (it uses simple, standard web rules so that any app can easily talk to it) backend service designed to simplify event planning and management. It provides secure endpoints for creating, updating, and deleting events, and tracking schedules. Built with FastAPI and MongoDB, the API features authentication, data validation, and robust error handling. It is scalable and can be integrated into web or mobile apps for seamless event coordination.
-Key Features:
-•	🔐 User authentication & authorization (JWT-based)
-•	📅 CRUD operations for events (create, read, update, delete)
-•	⚡ Fast and lightweight with FastAPI
-•	📊 MongoDB database integration for persistence
-</p>
-                            <a href="https://github.com/AkosuaSobolo/event_manager_api" target="_blank">View Project <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                        <div class="project-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">
-                        <img src="images/movie_api.png" alt="Project 3 preview">
-                        <div class="project-info">
-                            <h3>Movie Finder API</h3>
-                            <p>Is a RESTful backend service that lets users search and explore movies by title. It integrates with the OMDb API to fetch real-time movie data and stores user favorites in a MongoDB database. The API is built with FastAPI for speed and scalability, and it includes authentication to personalize user collections.
-Key Features:
-•	🔍 Search movies by title
-•	⭐ Save, view, and manage favorite movies
-•	⚡ High-performance API powered by FastAPI
-•	📊 MongoDB integration for storing user data
-</p>
-                            <a href="https://github.com/AkosuaSobolo/movie_finder_api" target="_blank"> View Project <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                        <div class="project-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">
-                        <img src="images/e-commerce api.png" alt="Project 4 preview">
-                        <div class="project-info">
-                            <h3>E-Commerce API</h3>
-                            <p>A RESTful backend service that powers online shopping experiences. It provides endpoints for managing products,
-                                users, carts, and checkout processes, ensuring a smooth and reliable workflow for both customers and store 
-                                admins. Built with FastAPI and MongoDB, the API features data validation, error handling, and a modular design
-                                 that can scale with growing business needs. It is efficient and ready to integrate into web or mobile 
-                                 e-commerce platforms.
-Key Features:
-• 🛍️ Product Management: Create, update, delete, and browse products with filtering support
-• 👤 User Accounts: Register and login with unique credentials
-• 🛒 Cart System: Add, view, and manage cart items per user
-• 💳 Checkout Flow: Generate order summaries and total amounts
-• ⚡ Fast and scalable: Powered by FastAPI
-• 📊 Persistent storage: MongoDB integration for reliability
-</p>
-                            <a href="https://github.com/AkosuaSobolo/e-commerce_api" target="_blank">View Project <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </section>
+        <div class="about__contact center">
+          <a href="Resume/Mary Worde's Resume.docx" target="_blank">
+            <span class="btn btn--outline">Download Resume</span>
+          </a>
 
-            <section id="contact">
-  <h2>Let's Get In Touch</h2>
-  <form action="https://formspree.io/f/xrbannke" method="POST" class="contact-form">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
-        </main>
-        <footer>
-            <p>&copy; 2025 Worde Mary. All rights reserved.</p>
-        </footer>
+          <a
+            href="https://github.com/AkosuaSobolo" target="_blank"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
 
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init({offset: 200});
-        </script>
-        <script src="script.js"></script>
-    </body>
+          <a
+            href="https://www.linkedin.com/in/mary-worde/" target="_blank"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">HTML</li>
+          <li class="skills__list-item btn btn--plain">CSS</li>
+          <li class="skills__list-item btn btn--plain">Python</li>
+          <li class="skills__list-item btn btn--plain">JavaScript</li>
+        </ul>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>My Portfolio</h3>
+            <img src="images/portfolio-project.png" alt="Project photo" class="about__img"/> 
+            <p class="project__description">
+              An interactive digital portfolio website designed to present my projects, skills, and professional journey in a clear and engaging way. 
+              The website reflects my creativity, communication style, and ability to translate ideas into impactful visual storytelling.
+              This portfolio website was built solely with HTML, CSS and JavaScript.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">HTML</li>
+              <li class="project__stack-item">CSS</li>
+              <li class="project__stack-item">JavaScript</li>
+            </ul>
+
+            <a
+              href="https://akosuasobolo.github.io/portfolio/"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Agric Advertisement Website</h3>
+            <img src="images/advert project.png" alt="Project photo" class="about__img"/>
+            <p class="project__description">
+              AGROKASA is a complete advertisement management platform designed for vendors and users in the agricultural marketplace. 
+              Vendors can easily post, manage, and track adverts for their products, while users can browse, search, and filter through adverts. 
+              Built with Fastapi, Mongo db, Nicegui, and Tailwind CSS, AGROKASA offers a fast, scalable, and responsive platform. It also has 
+              features for authentication, a vendor dashboard, and AI-powered features to enhance user experience.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">Fastapi</li>
+              <li class="project__stack-item">Mongodb</li>
+              <li class="project__stack-item">Nicegui</li>
+              <li class="project__stack-item">Tailwind css</li>
+            </ul>
+
+            <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>E-commerce Api</h3>
+            <img src="images/e-commerce-project.png" alt="Project photo" class="about__img"/>
+            <p class="project__description">
+              A backend service that powers online shopping experiences. It provides endpoints for managing products,
+              users, carts, and checkout processes, ensuring a smooth and reliable workflow for both customers and store 
+              admins. Built with FastAPI and MongoDB, the API features data validation, error handling, and a modular design
+              that can scale with growing business needs. It is efficient and ready to integrate into web or mobile 
+              e-commerce platforms.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">Fastapi</li>
+              <li class="project__stack-item">Mongodb</li>
+            </ul>
+
+            <a
+              href="https://github.com/AkosuaSobolo/e-commerce_api" target="_blank"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Event Manager Api</h3>
+            <img src="images/event-manager-project.png" alt="Project photo" class="about__img"/>
+            <p class="project__description">
+            A RESTful (it uses simple, standard web rules so that any app can easily talk to it) backend service designed to simplify event 
+            planning and management. It provides secure endpoints for creating, updating, and deleting events, and tracking schedules. 
+            Built with FastAPI and MongoDB, the API features authentication, data validation, and robust error handling. It is scalable and can be 
+            integrated into web or mobile apps for seamless event coordination.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">Fastapi</li>
+              <li class="project__stack-item">Mongodb</li>
+            </ul>
+
+            <a
+              href="https://github.com/AkosuaSobolo/event_manager_api" target="_blank"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+
+          <div class="project">
+            <h3>Movie Finder Api</h3>
+            <img src="images/movie-finder-project.png" alt="Project photo" class="about__img"/>
+            <p class="project__description">
+              Is a RESTful backend service that lets users search and explore movies by title. It integrates with the OMDb API to fetch 
+              real-time movie data and stores user favorites in a MongoDB database. The API is built with FastAPI for speed and scalability, 
+              and it includes authentication to personalize user collections.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">Fastapi</li>
+              <li class="project__stack-item">Mongodb</li>
+            </ul>
+
+            <a
+              href="https://github.com/AkosuaSobolo/movie_finder_api" target="_blank"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:akosuaworde11@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a
+        href="https://github.com/rjshkhr/cleanfolio-minimal"
+        class="link footer__link"
+      >
+        Worde Mary, 2025
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+      <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+          <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
 </html>
