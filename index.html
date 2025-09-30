@@ -20,8 +20,7 @@
   <body class="light" id="top">
     <header class="header center">
       <h3>
-        <a href="https://akosuasobolo.github.io/portfolio/" target="_blank" class="link"
-          >🤗Akosua</a
+        <a href="https://akosuasobolo.github.io/portfolio/" target="_blank" class="link"> < Akosua</a
         >
       </h3>
 
@@ -58,20 +57,27 @@
     <main>
       <!-- About -->
       <div class="about center">
-        <img src="images/Second.jpg" alt="Mary's profile photo" class="about__img"/>
-        <h1>Hello there, I am <span class="about__name">Mary.</span></h1>
-        <h2 class="about__role">A Back-end Developer.</h2>
-        <p class="about__desc">
-          A graduate of the University of Ghana with a degree in Information Studies and Russian Language. 
-          I specialize in backend development, using a combination of HTML, CSS, JavaScript, Python and Fastapi framework to build engaging digital 
-          experiences. My goal is to create clean, efficient, and maintainable projects.
-        </p>
+        <div class="about__content-container"> 
+            <img src="images/Second.jpg" alt="Mary's profile photo" class="about__img"/>
+            
+            <div>
+                <h1>Hello there, I am <span class="about__name">Mary.</span></h1>
+                <h2 class="about__role">A Back-end Developer.</h2>
 
-        <div class="about__contact center">
-          <a href="Resume/Mary Worde's Resume.docx" target="_blank">
-            <span class="btn btn--outline">Download Resume</span>
-          </a>
-
+                <section id="about" class="section about">
+                    <h2 class="section__title">About Me</h2>
+                    <p>
+                      I am a graduate of the University of Ghana with a degree in Information Studies and Russian Language. 
+                      I'm currently a learner at MEST Africa, Ghana and specialize in backend development, using a combination of HTML, CSS, JavaScript, Python and Fastapi framework 
+                      to build engaging digital experiences. My goal is to create clean, efficient, and maintainable projects.
+                    </p>
+                </section>
+            </div>
+        </div>
+                <div class="about__contact center">
+          <a href="https://docs.google.com/document/d/12Ob-x9XUC8KLr-t-i_IAFd9Uu5gOmM11/" target="_blank">
+            <span class="btn btn--outline">View Resume</span>
+          </a>
           <a
             href="https://github.com/AkosuaSobolo" target="_blank"
             aria-label="github"
@@ -94,10 +100,20 @@
       <section class="section skills" id="skills">
         <h2 class="section__title">Skills</h2>
         <ul class="skills__list">
-          <li class="skills__list-item btn btn--plain">HTML</li>
-          <li class="skills__list-item btn btn--plain">CSS</li>
-          <li class="skills__list-item btn btn--plain">Python</li>
-          <li class="skills__list-item btn btn--plain">JavaScript</li>
+        <li class="skills__list-item ">
+            <i class="fab fa-html5"></i>
+        </li>
+        <li class="skills__list-item">
+            <i class="fab fa-css3-alt"></i>
+        </li>
+        <li class="skills__list-item">
+            <i class="fab fa-python"></i>
+        </li>
+        <li class="skills__list-item">
+            <i class="fab fa-js-square"></i>
+        </li>
+    </ul>
+</section>
         </ul>
       </section>
 
@@ -269,7 +285,7 @@
       <section class="section contact center" id="contact">
         <h2 class="section__title">Contact</h2>
         <a href="mailto:akosuaworde11@gmail.com">
-          <span class="btn btn--outline">Email me</span>
+          <span class="btn btn--outline">Let's talk</span>
         </a>
       </section>
     </main>
@@ -279,7 +295,7 @@
         href="https://github.com/rjshkhr/cleanfolio-minimal"
         class="link footer__link"
       >
-        Worde Mary, 2025
+        <p>&copy; 2025 Worde Mary. All rights reserved.</p>
       </a>
     </footer>
 

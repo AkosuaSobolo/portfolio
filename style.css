@@ -88,10 +88,39 @@ button {
   cursor: pointer;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   h1 {
     font-size: 2.6rem;
   }
+  .about__content-container {
+        flex-direction: column; 
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+.about__content-container .about__img {
+        margin-bottom: 1rem; 
+        width: 200px;
+        height: 200px;
+    }
+
+.about__info-text {
+        text-align: center; 
+    }
+
+.about__info-text .section__title {
+        text-align: center; 
+    }
+
+   
+    .projects__grid {
+        grid-template-columns: 1fr; 
+        grid-gap: 3em;
+    }
+    
+    .project {
+        padding: 1.5em 1em; 
+    }
 }
 
 /*===================
@@ -132,7 +161,7 @@ button {
 
 .link--icon {
   color: var(--clr-fg);
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 .btn {
@@ -247,9 +276,51 @@ main {
   width: 1em;
 }
 
-.about {
+/* .about {
   flex-direction: column;
   margin-top: 3em;
+} */
+
+/* ===================
+   New Side-by-Side Layout Styles
+   =================== */
+
+.about {
+    /* Set the max-width and center the whole section content for the new layout */
+    max-width: 1100px; 
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    /* Reset the old 'center' flex properties */
+    display: block; 
+}
+
+.about__content-container {
+    display: flex;
+    align-items: center; /* Vertically align image and text */
+    gap: 3rem; /* Space between the image and the text */
+    margin-top: 3em;
+    margin-bottom: 2em; /* Add space before contact links */
+}
+
+/* Ensure the image doesn't take up too much space and is fixed size */
+.about__content-container .about__img {
+    flex-shrink: 0; /* Prevents the image from shrinking below its width */
+    width: 300px; /* Adjusted size slightly for side-by-side view */
+    height: 300px;
+    margin-bottom: 0; /* Remove the old margin-bottom */
+}
+
+/* Allow the text block to take up the rest of the available space */
+.about__info-text {
+    flex-grow: 1;
+    text-align: left; /* Align text to the left */
+}
+
+.about__info-text .section__title {
+    /* Overwrite the centered title on the main content area */
+    text-align: left;
+    margin-top: 0;
 }
 
 .about__img {
@@ -259,7 +330,7 @@ main {
   border-radius: 50%; /* makes it round */
   object-fit: cover;
   margin-bottom: 1rem;
-  box-shadow: 3px 5px 30px #9d43a2;
+  box-shadow: 3px 5px 30px #2978b5;
 }
 
 .about__name {
@@ -342,9 +413,25 @@ main {
 }
 
 .skills__list-item {
-  margin: 0.5em;
+    margin: 1em;
+    padding: 1.3em 1em;
+    background-color: #f5f3f3;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
+.skills__list-item .fab {
+    margin-right: 0.5em; 
+    font-size: 4em;
+    color: #8ac3ec;
+}
+
+.skills__list-item:hover {
+    transform: translateY(-8px);
+}
 .contact {
   flex-direction: column;
 }
@@ -376,11 +463,16 @@ main {
     height: 6em;
   }
 
-  .section {
+.section {
     margin-top: 4em;
   }
 
-  .nav__list {
+main {
+padding: 0 1em;
+width: 100%;
+ }
+
+.nav__list {
     flex-direction: column;
     padding: 4em 0;
     position: absolute;
@@ -418,5 +510,3 @@ main {
 
   .scroll-container {
     display: none;
-  }
-}
