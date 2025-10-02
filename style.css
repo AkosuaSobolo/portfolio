@@ -305,10 +305,10 @@ main {
 
 /* Ensure the image doesn't take up too much space and is fixed size */
 .about__content-container .about__img {
-    flex-shrink: 0; /* Prevents the image from shrinking below its width */
-    width: 300px; /* Adjusted size slightly for side-by-side view */
-    height: 300px;
-    margin-bottom: 0; /* Remove the old margin-bottom */
+    flex-shrink: 0; 
+    width: 300px; 
+    height: 400px;
+    margin-bottom: 0; 
 }
 
 /* Allow the text block to take up the rest of the available space */
@@ -319,7 +319,7 @@ main {
 
 .about__info-text .section__title {
     /* Overwrite the centered title on the main content area */
-    text-align: left;
+    text-align: center;
     margin-top: 0;
 }
 
@@ -343,7 +343,7 @@ main {
 
 .about__desc {
   font-size: 1.3rem;
-  max-width: 600px;
+  max-width: 400px;
 }
 
 .about__desc,
@@ -420,7 +420,7 @@ main {
     border-radius: 4px;
     display: flex;
     align-items: center;
-    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .skills__list-item .fab {
@@ -510,3 +510,5 @@ width: 100%;
 
   .scroll-container {
     display: none;
+    }
+  }
