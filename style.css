@@ -69,7 +69,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  margin-left: 100px;
+  margin-left: 60px;
   text-align: center;
 }
 
@@ -77,8 +77,20 @@ h3 {
   font-size: 1.5rem;
 }
 
+.about_intro {
+  margin-left: 200px;
+  margin-left: 230px;
+  margin-top: 30px;
+  color: var(--clr-primary);
+  flex: 2; 
+}
+
 h4 {
   font-size: 1.3rem;
+  margin-left: 230px;
+  margin-top: 30px;
+  color: var(--clr-primary);
+  flex: 2; 
 }
 
 ul {
@@ -116,7 +128,39 @@ button {
 .about__info-text .section__title {
         text-align: center; 
     }
+.h1 {
+  text-align: center;
+}   
 
+    @media (max-width: 600px) {
+  /* ... your existing mobile styles ... */
+  h1 {
+    font-size: 2.6rem;
+  }
+  .about__content-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  /* ... rest of existing mobile styles ... */
+  .about__header-container,
+  .about__bio-container {
+    flex-direction: column;
+    align-items: center; /* Center items for a nicer mobile stack */
+    gap: 0; /* Optional: adjust gap for stacked content */
+  }
+
+  /* You might also want to adjust the image size for mobile */
+  .bio-photo__img {
+    width: 100%; /* Example: make the photo smaller for mobile */
+    height: auto;
+    align-items: center;
+  }
+  .h1 {
+    text-align: center;
+  }
+}
    
     .projects__grid {
         grid-template-columns: 1fr; 
@@ -135,6 +179,8 @@ button {
 .link {
   color: var(--clr-primary);
   padding: 0 0 0.3em 0;
+  padding-top: 0%;
+  padding-left: 0%;
   position: relative;
 }
 
@@ -223,6 +269,7 @@ button {
 .btn--icon {
   padding: 0;
   font-size: 1.2rem;
+  align-items: center;
 }
 
 .btn--icon:hover,
@@ -265,6 +312,7 @@ main {
   text-align: center;
   margin-bottom: 1em;
   text-transform: uppercase;
+  margin-left: 0%;
 }
 
 .nav__list {
@@ -359,6 +407,7 @@ main {
 .about__desc,
 .about__contact {
   margin-top: 2.4em;
+  align-items: center;
 }
 
 .about .link--icon {
