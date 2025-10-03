@@ -127,10 +127,7 @@ button {
 
 .about__info-text .section__title {
         text-align: center; 
-    }
-.h1 {
-  text-align: center;
-}   
+    }  
 
     @media (max-width: 600px) {
   /* ... your existing mobile styles ... */
@@ -170,6 +167,11 @@ button {
     .project {
         padding: 1.5em 1em; 
     }
+
+ .h1 {
+  text-align: center;
+  padding-right: 0%;
+ }
 }
 
 /*===================
