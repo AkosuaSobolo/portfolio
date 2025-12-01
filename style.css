@@ -150,17 +150,17 @@ button {
     width: 100%;
   }
 
-  /* ... rest of existing mobile styles ... */
+  
   .about__header-container,
   .about__bio-container {
     flex-direction: column;
-    align-items: center; /* Center items for a nicer mobile stack */
-    gap: 0; /* Optional: adjust gap for stacked content */
+    align-items: center; 
+    gap: 0; 
   }
 
-  /* You might also want to adjust the image size for mobile */
+  
   .bio-photo__img {
-    width: 100%; /* Example: make the photo smaller for mobile */
+    width: 100%; 
     height: auto;
     align-items: center;
   }
@@ -351,24 +351,21 @@ main {
    =================== */
 
 .about {
-    /* Set the max-width and center the whole section content for the new layout */
     max-width: 1100px; 
     width: 95%;
     margin-left: auto;
     margin-right: auto;
-    /* Reset the old 'center' flex properties */
     display: block; 
 }
 
 .about__content-container {
     display: flex;
-    align-items: center; /* Vertically align image and text */
-    gap: 3rem; /* Space between the image and the text */
+    align-items: center; 
+    gap: 3rem; 
     margin-top: 3em;
-    margin-bottom: 2em; /* Add space before contact links */
+    margin-bottom: 2em; 
 }
 
-/* Ensure the image doesn't take up too much space and is fixed size */
 .about__content-container .about__img {
     flex-shrink: 0; 
     width: 300px; 
@@ -376,14 +373,12 @@ main {
     margin-bottom: 0; 
 }
 
-/* Allow the text block to take up the rest of the available space */
 .about__info-text {
     flex-grow: 1;
-    text-align: left; /* Align text to the left */
+    text-align: left; 
 }
 
 .about__info-text .section__title {
-    /* Overwrite the centered title on the main content area */
     text-align: center;
     margin-top: 0;
 }
@@ -392,7 +387,7 @@ main {
   width: 330px;
   height: 450px;
   padding: 2px;
-  border-radius: 50%; /* makes it round */
+  border-radius: 50%; 
   object-fit: cover;
   margin-bottom: 1rem;
   box-shadow: 3px 5px 30px #2978b5;
@@ -401,7 +396,6 @@ main {
 .about__name {
   color: var(--clr-primary);
   flex: 2; 
-  /* text-align: center; */
   margin-left: 100px;
 }
 
@@ -433,38 +427,32 @@ main {
 }
 
 
-/* 1. Make the bio text and photo sit side-by-side */
 .about__bio-container {
     display: flex;
-    justify-content: space-between; /* Puts space between the text and the photo */
-    align-items: flex-start; /* Aligns content to the top */
+    justify-content: space-between; 
+    align-items: flex-start; 
     margin-top: 30px; 
-    gap: 40px; /* Add a nice gap between the two columns */
+    gap: 40px; 
 }
 
-/* 2. Control the width of the text column (e.g., 70% of the container) */
 .about__bio-text {
-    flex: 2; /* This allows the text to take up about 2/3 of the space */
-    /* Alternatively, you can use a fixed width: width: 70%; */
+    flex: 2; 
 }
 
-/* 3. Control the width of the image column (e.g., 30% of the container) */
+
 .about__bio-photo {
-    width: 30%; /* This allows the photo to take up about 1/3 of the space */
-    /* Alternatively, you can use a fixed width: width: 30%; */
-    text-align: right; /* Ensure the image is right-aligned in its space */
-    border-radius: 40%; /* makes it round */
+    width: 30%; 
+    text-align: right; 
+    border-radius: 40%; 
 }
 
-/* 4. Make sure the image inside the photo container scales correctly */
 .bio-photo__img {
-    max-width: 100%; /* Ensures the image doesn't overflow its container */
-    height: 50%; /* Maintains the image's aspect ratio */
-    border-radius: 100%; /* Optional: adds a nice soft edge to the image */
+    max-width: 100%; 
+    height: 50%; 
+    border-radius: 100%; 
     box-shadow: 3px 5px 30px #2978b5;
 }
 
-/* Make sure you keep the CSS from the previous step for the header area: */
 .about__header-container {
     display: flex;
     align-items: flex-start; 
@@ -472,7 +460,7 @@ main {
 }
 
 .projects__grid {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
@@ -534,7 +522,8 @@ main {
 }
 
 .skills__list-item .fab {
-    margin-right: 0.5em; 
+    margin-right: 0.3em; 
+    margin-left: 0.3em; 
     font-size: 4em;
     color: #8ac3ec;
 }
