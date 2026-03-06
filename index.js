@@ -8,8 +8,8 @@ const addThemeClass = (bodyClass, btnClass) => {
   btnTheme.classList.add(btnClass)
 }
 
-const getBodyTheme = localStorage.getItem('portfolio-theme')
-const getBtnTheme = localStorage.getItem('portfolio-btn-theme')
+const getBodyTheme = localStorage.getItem('portfolio-theme') || 'light'
+const getBtnTheme = localStorage.getItem('portfolio-btn-theme') || 'fa-moon'
 
 addThemeClass(getBodyTheme, getBtnTheme)
 
@@ -61,3 +61,43 @@ const scrollUp = () => {
 }
 
 document.addEventListener('scroll', scrollUp)
+
+// Scroll Reveal Animations
+const revealElements = document.querySelectorAll('.reveal, .reveal-right, .reveal-left');
+
+const revealCallback = (entries, observer) => {
+	entries.forEach(entry => {
+		if(entry.isIntersecting) {
+			entry.target.classList.add('active');
+		} else {
+			entry.target.classList.remove('active');
+		}
+	});
+};
+
+const revealOptions = {
+	root: null,
+	threshold: 0.15,
+	rootMargin: "0px 0px -50px 0px"
+};
+
+const revealObserver = new IntersectionObserver(revealCallback, revealOptions);
+
+revealElements.forEach(el => revealObserver.observe(el));
+
+// Read More Toggle Logic
+const readMoreButtons = document.querySelectorAll('.btn--read-more');
+
+readMoreButtons.forEach(btn => {
+	btn.addEventListener('click', () => {
+		const description = btn.previousElementSibling;
+		
+		if (description.classList.contains('expanded')) {
+			description.classList.remove('expanded');
+			btn.textContent = 'Read More';
+		} else {
+			description.classList.add('expanded');
+			btn.textContent = 'Read Less';
+		}
+	});
+});
